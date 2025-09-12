@@ -22,5 +22,6 @@
 .inner {
     max-width: 1600px;
     margin: 0 auto;
-    background-color:rgba(0,0,255,0.2);
+    padding: 0 16px;
+    /* background-color:rgba(0,0,255,0.2); */
 }

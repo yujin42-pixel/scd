@@ -5,6 +5,7 @@ header {
     width: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
     top: 0;
+    background: rgba(255, 255, 255, 0.8);
 
     .inner {
         display: flex;
@@ -19,7 +20,7 @@ header {
             display: flex;
             gap: 8rem;
 
-            li {
+            >li {
                 position: relative;
 
                 &:hover {
@@ -45,7 +46,7 @@ header {
                     transition: 0.3s;
                 }
 
-                a {
+                >a {
                     font-size: 2rem;
                     display: block;
                     line-height: 70px;
@@ -60,7 +61,6 @@ header {
                     top: 68px;
                 }
             }
-
         }
 
         .gnb_wrap {
@@ -107,6 +107,8 @@ header {
 }
 
 footer {
+    padding-top: 7rem;
+
     .inner {
         max-width: 1700px;
         background: #636363;
@@ -117,6 +119,36 @@ footer {
         font-size: var(--text_size);
         color: #f3f3f3;
         font-weight: 200;
+        position: relative;
+
+        .top_btn {
+            position: absolute;
+            right: 0;
+            top: -70px;
+
+            a {
+                display: block;
+                width: 6rem;
+                height: 6rem;
+                border-radius: 6rem;
+                background: rgba(255, 38, 38, 0.5);
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../images/icon-arrow-45deg.svg);
+                    background-size: 100%;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
 
         .footer_left {
             address {
