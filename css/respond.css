@@ -341,7 +341,7 @@
                         padding: 4rem;
 
                         .scd_title {
-                            span{
+                            span {
                                 display: block;
                             }
                         }
@@ -351,13 +351,72 @@
         }
     }
 
-    footer{
+    footer {
         .inner {
-            .footer_logo{
-                img{
+            .footer_logo {
+                img {
                     width: 40vw;
                 }
             }
         }
     }
+}
+
+@media screen and (max-width:480px) {
+
+    /* 각 세션 아래 여백 절반 */
+    section {
+        padding-bottom: 5rem;
+    }
+
+    /* .section_title 절반 */
+    .section_title {
+        font-size: 2rem;
+        padding: 1.5rem 0 1rem;
+    }
+
+    /* product안 제목: 엘사반정 크기 절반/ 위아래 여백 절반 */
+    .product_wrap {
+        .product_list_wrap {
+            .product {
+                .product_list {
+                    li {
+                        .text_box {
+                            .product_title {
+                                font-size: 1.5rem;
+                                margin: 1.5rem 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* news 안쪽 여백 줄이기/ 요소들간 여백 줄이기 */
+    /* 버튼 60% 줄이기 */
+    .latest_news_wrap {
+        .news_list {
+            gap: 1rem;
+
+            li {
+                padding: 6rem 4rem;
+
+                .more_btn {
+                    right: -20px;
+                    bottom: 10px;
+
+                    img {
+                        max-width: 60%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* footer 위 하얀여백 절반 */
+    footer {
+        padding-top: 3.5rem;
+    }
+
 }
